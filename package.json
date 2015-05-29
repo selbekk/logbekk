@@ -1,0 +1,18 @@
+{
+  "name": "logger",
+  "version": "1.0.0",
+  "description": "A simple log framework with log level support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "log",
+    "logging",
+    "logger",
+    "log",
+    "levels"
+  ],
+  "author": "selbekk <selbeezy@gmail.com>",
+  "license": "ISC"
+}
