@@ -2,9 +2,11 @@
   "name": "logger",
   "version": "1.0.0",
   "description": "A simple log framework with log level support",
-  "main": "index.js",
+  "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel logger.js -o build.js",
+    "watch": "babel index.js --watch -o build.js",
+    "test": "iojs --harmony test.js"
   },
   "keywords": [
     "log",
