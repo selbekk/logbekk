@@ -14,9 +14,7 @@ function readSettings() {
         var settingsString = fs.readFileSync('./log.json', { encoding: 'UTF-8' });
         var settings = JSON.parse(settingsString);
         settings = extend({}, defaults, settings);
-
-        settings.level = LogLevel.fromString(settings.logLevel) || LogLevel.INFO;
-
+        settings.level = LogLevel.fromString(settings.level) || LogLevel.INFO;
         return settings;
     }
     catch(err) {

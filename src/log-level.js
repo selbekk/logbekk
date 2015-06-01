@@ -12,7 +12,12 @@ module.exports = {
     INFO: new LogLevel('INFO', 10),
     WARN: new LogLevel('WARN', 100),
     ERROR: new LogLevel('ERROR', 1000),
-    fromString: function(str) {
+    fromString(str) {
+        if(!str) {
+            return;
+        }
+
+        str = str.toUpperCase();
         if(this.hasOwnProperty(str)) {
             return this[str];
         }
