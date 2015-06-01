@@ -1,5 +1,5 @@
 {
-  "name": "logger",
+  "name": "logbekk",
   "version": "1.0.0",
   "description": "A simple log framework with log level support",
   "main": "lib/index.js",
