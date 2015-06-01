@@ -3,8 +3,8 @@ var LogLevel = function(name, priority) {
     this.priority = priority;
 };
 
-LogLevel.prototype.isValid = function(currentLevel) {
-    return this.priority >= currentLevel.priority;
+LogLevel.prototype.isValid = function(levelToMatch) {
+    return this.priority >= levelToMatch.priority;
 };
 
 module.exports = {
