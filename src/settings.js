@@ -3,8 +3,8 @@ var extend = require('extend'),
     LogLevel = require('./log-level');
 
 var defaults = {
-    out: process.out,
-    level: 'INFO',
+    dest: process.out,
+    level: LogLevel.INFO,
     timestamp: 'YYYY-MM-DD HH:mm:ss'
 };
 
@@ -15,7 +15,7 @@ function readSettings() {
         var settings = JSON.parse(settingsString);
         settings = extend({}, defaults, settings);
 
-        settings.logLevel = LogLevel.fromString(settings.logLevel) || LogLevel.INFO;
+        settings.level = LogLevel.fromString(settings.logLevel) || LogLevel.INFO;
 
         return settings;
     }

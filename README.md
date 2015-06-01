@@ -11,7 +11,7 @@ setting the ``LOG_SETTINGS`` environment variable.
 
 Here are the available settings and the defaults:
 
-### out
+### dest
 **Default:** ``process.out``<br>
 Set to the name of your output file, or leave un-set if you want the logs to be
 sent to stdout.
