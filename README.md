@@ -1,7 +1,19 @@
 # A logger for Node
 
-I've written this so many times, I thought I'd make it its own little NPM
-package.
+Supports log levels and template strings.
+
+## Install
+
+	npm install logbekk --save
+
+## Basic usage
+
+	var Logger = require('logbekk');
+	var log = new Logger();
+	
+	log.info('or .info or .warn or .error');
+	var name = 'logbekk';
+	log.info('{} supports templating too!', name);
 
 ## Settings
 
