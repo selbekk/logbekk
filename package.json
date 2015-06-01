@@ -2,10 +2,9 @@
   "name": "logger",
   "version": "1.0.0",
   "description": "A simple log framework with log level support",
-  "main": "build.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel logger.js -o build.js",
-    "watch": "babel index.js --watch -o build.js",
+    "build": "babel src --out-dir lib",
     "test": "iojs --harmony test.js"
   },
   "keywords": [
@@ -16,5 +15,9 @@
     "levels"
   ],
   "author": "selbekk <selbeezy@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "extend": "^2.0.1",
+    "moment": "^2.10.3"
+  }
 }
