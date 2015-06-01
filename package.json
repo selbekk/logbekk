@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A simple log framework with log level support",
   "main": "lib/index.js",
+  "repository": "https://github.com/selbekk/logbekk",
   "scripts": {
     "build": "babel src --out-dir lib",
     "test": "iojs --harmony test.js"
