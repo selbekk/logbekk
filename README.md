@@ -13,7 +13,7 @@ Supports log levels and template strings.
 	var Logger = require('logbekk');
 	var log = new Logger();
 	
-	log.info('or .info or .warn or .error');
+	log.debug('or .info or .warn or .error');
 	var name = 'logbekk';
 	log.info('{} supports templating too!', name);
 
