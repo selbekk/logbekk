@@ -1,5 +1,7 @@
 # A logger for Node
 
+[![npm version](https://badge.fury.io/js/logbekk.svg)](http://badge.fury.io/js/logbekk)
+
 Supports log levels and template strings.
 
 ## Install
